@@ -5,8 +5,13 @@ const PORT = 8080;
 function requestHandler(request, response) {
     if(request.url == "/") {
         response.end("Welcome!");
+/*  if(request.url === "Home") {
+        response.end("Welcome!")    
+} */
     } else if(request.url == "/urls") {
         response.end("www.lighthouselabs.ca\nwww.google.com");
+/*  } else if(request.url === )
+*/
     } else {
         //response.end(`Requested Path: ${request.url}/nRequest Method: ${request.method}`);
         response.statusCode = 404;
